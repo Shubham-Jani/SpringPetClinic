@@ -22,10 +22,15 @@
 		<module>petcare-data</module>
 		<module>petcare-web</module>
 	</modules>
-	<dependencies>
-	</dependencies>
 	<build>
 		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-release-plugin</artifactId>
+				<configuration>
+					<goals>install</goals>
+				</configuration>
+			</plugin>
 			<plugin>
 				<groupId>org.hibernate.orm.tooling</groupId>
 				<artifactId>hibernate-enhance-maven-plugin</artifactId>
@@ -62,5 +67,8 @@
 			</plugin>
 		</plugins>
 	</build>
+	<scm>
+		<developerConnection>scm:git:git@github.com:Shubham-Jani/SpringPetClinic.git</developerConnection>
+	</scm>
 
 </project>
