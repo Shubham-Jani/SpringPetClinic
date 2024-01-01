@@ -1,4 +1,4 @@
-package jani.petcare.petcare.model;
+package jani.patecare.data.model;
 
 public class Owner extends Person {
 
