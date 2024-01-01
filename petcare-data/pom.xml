@@ -4,11 +4,11 @@
     <parent>
         <groupId>jani.petcare</groupId>
         <artifactId>petcare</artifactId>
-        <version>0.0.1</version>
+        <version>1.1-SNAPSHOT</version>
     </parent>
     <groupId>jani.patecare.data</groupId>
     <artifactId>petcare-data</artifactId>
-    <version>1.0</version>
+    <version>1.1-SNAPSHOT</version>
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
