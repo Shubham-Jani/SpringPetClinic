@@ -4,7 +4,7 @@
     <parent>
         <groupId>jani.petcare</groupId>
         <artifactId>petcare</artifactId>
-        <version>0.0.1</version>
+        <version>1.0</version>
     </parent>
 
     <groupId>jani.petcare.web</groupId>
@@ -107,4 +107,8 @@
         </plugins>
     </build>
 
+
+  <scm>
+    <tag>petcare-1.0</tag>
+  </scm>
 </project>
