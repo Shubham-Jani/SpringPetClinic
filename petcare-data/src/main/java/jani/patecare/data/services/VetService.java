@@ -1,5 +1,7 @@
 package jani.patecare.data.services;
 
-public interface VetService {
+import jani.patecare.data.model.Vet;
+
+public interface VetService extends CrudService<Vet, Long> {
 
 }
