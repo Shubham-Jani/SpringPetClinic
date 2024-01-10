@@ -3,9 +3,9 @@ package jani.patecare.data.services.map;
 import java.util.Set;
 
 import jani.patecare.data.model.Vet;
-import jani.patecare.data.services.CrudService;
+import jani.patecare.data.services.VetService;
 
-public class VetMapServiceImpl extends AbstractMapService<Vet, Long> implements CrudService<Vet, Long> {
+public class VetMapServiceImpl extends AbstractMapService<Vet, Long> implements VetService {
 
     @Override
     public void delete(Vet object) {
