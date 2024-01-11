@@ -3,10 +3,9 @@ package jani.petcare.web;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@SpringBootApplication
-public class Main {
+@SpringBootApplication(scanBasePackages = "jani.petcare.data")
+public class SfgPetClinicApplication {
     public static void main(String[] args) {
-        SpringApplication.run(Main.class, args);
-
+        SpringApplication.run(SfgPetClinicApplication.class, args);
     }
 }

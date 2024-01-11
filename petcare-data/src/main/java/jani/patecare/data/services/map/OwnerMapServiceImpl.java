@@ -2,10 +2,12 @@ package jani.patecare.data.services.map;
 
 import java.util.Set;
 
+import org.springframework.stereotype.Service;
+
 import jani.patecare.data.model.Owner;
-import jani.patecare.data.services.CrudService;
 import jani.patecare.data.services.OwnerService;
 
+@Service
 public class OwnerMapServiceImpl extends AbstractMapService<Owner, Long> implements OwnerService {
 
     @Override

@@ -7,18 +7,16 @@ import jani.patecare.data.model.Owner;
 import jani.patecare.data.model.Vet;
 import jani.patecare.data.services.OwnerService;
 import jani.patecare.data.services.VetService;
-import jani.patecare.data.services.map.OwnerMapServiceImpl;
-import jani.patecare.data.services.map.VetMapServiceImpl;
 
 @Component
 public class DataLoader implements CommandLineRunner {
 
-    private static OwnerService ownerService;
-    private static VetService vetService;
+    private final OwnerService ownerService;
+    private final VetService vetService;
 
-    public DataLoader() {
-        ownerService = new OwnerMapServiceImpl();
-        vetService = new VetMapServiceImpl();
+    public DataLoader(OwnerService ownerService, VetService vetService) {
+        this.ownerService = ownerService;
+        this.vetService = vetService;
     }
 
     @Override

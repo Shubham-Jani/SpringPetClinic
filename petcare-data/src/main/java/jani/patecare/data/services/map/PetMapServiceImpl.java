@@ -2,9 +2,12 @@ package jani.patecare.data.services.map;
 
 import java.util.Set;
 
+import org.springframework.stereotype.Service;
+
 import jani.patecare.data.model.Pet;
 import jani.patecare.data.services.PetService;
 
+@Service
 public class PetMapServiceImpl extends AbstractMapService<Pet, Long> implements PetService {
 
     @Override

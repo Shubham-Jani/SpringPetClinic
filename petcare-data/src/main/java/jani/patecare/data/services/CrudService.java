@@ -2,6 +2,9 @@ package jani.patecare.data.services;
 
 import java.util.Set;
 
+import org.springframework.stereotype.Service;
+
+@Service
 public interface CrudService<T, ID> {
     public Set<T> findall();
 
