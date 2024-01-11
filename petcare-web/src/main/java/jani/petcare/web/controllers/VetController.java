@@ -1,12 +1,12 @@
 package jani.petcare.web.controllers;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 public class VetController {
 
-    @RequestMapping({ "/vets", "/vets/index", "/vets/index.html" })
+    @GetMapping({ "/vets", "/vets/index", "/vets/index.html" })
     public String listVets() {
         return "vets/index";
     }
